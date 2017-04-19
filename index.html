@@ -8,69 +8,197 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<style type="text/css">
-			#goods figcaption {
-				
+			@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic');
+			body {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 18px;
+				color: #445264;
+				margin-top: 8px;
+			}
+			#goods figure {
+				width: 262px;
+				margin: 0px auto;
+				box-sizing: border-box;
+				padding-left: 20px;
+				padding-bottom: 30px;
+s			}
+			#goods figure:hover {
+				outline: 1px solid #e6e6e6;
+			}
+			#goods figure:hover h3 {
+				color: #4b98e8;
+				text-decoration: underline;
+			}
+			#goods>img {
+				width: 219px;
+				height: 278px;
+			}
+			#goods h3 {
+				font-size: 1em;
+				width: 182px;
+				height: 40px;
+			}
+			#goods small {
+				display: inline-block;
+				color: #8c8c8c;
+				font-size: 13px;
+				width: 185px;
+				height: 29px;
+				vertical-align: top;
+			}
+			.choose-price {
+				padding: 20px 0;
+				width: 200px;
+			}
+			.choose-price>div {
+				display: inline-block;
+				font-weight: 600;
+
+			}
+			.choose-price:hover>div {
+				color: #4b98e8;
+				cursor: pointer;
+			}
+			.choose-price div:nth-child(2) span{
+				vertical-align: sub;
+			}
+			.choose-price .weight {
+				float: right;
+				font-size: 14px;
+			}
+			.choose-price img {
+				vertical-align: sub;
+   				margin-left: 5px;
+			}
+			.goods-btns button {
+				outline: none;
+				padding: 9px 15px;
+			}
+			.goods-btns .to-cart {
+				background-color: #9e9e9e;
+			    border: none;
+			    border-left: 3px solid #4b98e8;
+			    color: #fff;
+			    font-size: 16px;
+			    font-weight: 600;
+			}
+			.goods-btns .more-info {
+				border: 1px solid #9e9e9e;
+			    background: none;
+			    color: #9e9e9e;
+			    font-size: 14px;
+			    vertical-align: top;
 			}
 		</style>
 	</head>
 	<body>
 		<section id="goods">
-			<div class="row">
-				<div class="col-sm-4 col-lg-4">
-					<figure>
-						<p><img src="img/goods1.png" alt="goods"></p>
-						<figcaption>
-							<h3>Acana Wild Prairie cat  and dog</h3>
-							<small></small>
-						</figcaption>
-					</figure>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-lg-4">
+						<figure>
+							<p><img src="img/goods1.png" alt="goods"></p>
+							<figcaption>
+								<h3>Acana Wild Prairie cat  and dog</h3>
+								<small>Беззерновой корм с курицей для собак корм с курицей</small>
+							</figcaption>
+							<div class="choose-price clearfix">
+								<div class="price"><span>3000000 руб</span></div>
+								<div class="weight"><span>0.24 кг</span><img src="img/caret-down.png" alt="V"></div>
+							</div>
+							<div class="goods-btns">
+								<button class="to-cart">В корзину</button>
+								<button class="more-info">Подробнее</button>
+							</div>
+						</figure>
+					</div>
+					<div class="col-sm-4 col-lg-4">
+						<figure>
+							<p><img src="img/goods1.png" alt="goods"></p>
+							<figcaption>
+								<h3>Acana Wild Prairie dog Wild Prairie dog</h3>
+								<small>Беззерновой корм с курицей для собак корм с курицей</small>
+							</figcaption>
+							<div class="choose-price clearfix">
+								<div class="price"><span>3000000 руб</span></div>
+								<div class="weight"><span>0.24 кг</span><img src="img/caret-down.png" alt="V"></div>
+							</div>
+							<div class="goods-btns">
+								<button class="to-cart">В корзину</button>
+								<button class="more-info">Подробнее</button>
+							</div>
+						</figure>
+					</div>
+					<div class="col-sm-4 col-lg-4">
+						<figure>
+							<p><img src="img/goods1.png" alt="goods"></p>
+							<figcaption>
+								<h3>Ami Play Crazy</h3>
+								<small>Лежак овальный, размер XS</small>
+							</figcaption>
+							<div class="choose-price clearfix">
+								<div class="price"><span>3000000 руб</span></div>
+								<div class="weight"><span>0.24 кг</span><img src="img/caret-down.png" alt="V"></div>
+							</div>
+							<div class="goods-btns">
+								<button class="to-cart">В корзину</button>
+								<button class="more-info">Подробнее</button>
+							</div>
+						</figure>
+					</div>
 				</div>
-				<div class="col-sm-4 col-lg-4">
-					<figure>
+				<div class="row">
+					<div class="col-sm-4 col-lg-4">
+						<figure>
+							<p><img src="img/goods1.png" alt="goods"></p>
+							<figcaption>
+								<h3>Acana Wild Prairie cat  and dog</h3>
+								<small>Беззерновой корм с курицей для собак корм с курицей</small>
+							</figcaption>
+							<div class="choose-price clearfix">
+								<div class="price"><span>3000000 руб</span></div>
+								<div class="weight"><span>0.24 кг</span><img src="img/caret-down.png" alt="V"></div>
+							</div>
+							<div class="goods-btns">
+								<button class="to-cart">В корзину</button>
+								<button class="more-info">Подробнее</button>
+							</div>
+						</figure>
+					</div>
+					<div class="col-sm-4 col-lg-4">
+						<figure>
 						<p><img src="img/goods1.png" alt="goods"></p>
-						<figcaption>
-							<h3>Acana Wild Prairie dog Wild Prairie dog</h3>
-							<small></small>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="col-sm-4 col-lg-4">
-					<figure>
-						<p><img src="img/goods1.png" alt="goods"></p>
-						<figcaption>
-							<h3>Ami Play Crazy</h3>
-							<small></small>
-						</figcaption>
-					</figure>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4 col-lg-4">
-					<figure>
-						<p><img src="img/goods1.png" alt="goods"></p>
-						<figcaption>
-							<h3>Acana Wild Prairie cat  and dog</h3>
-							<small></small>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="col-sm-4 col-lg-4">
-					<figure>
-					<p><img src="img/goods1.png" alt="goods"></p>
-						<figcaption>
-							<h3>Acana Wild Prairie dog Wild Prairie dog</h3>
-							<small></small>
-						</figcaption>
-					</figure>
-				</div>
-				<div class="col-sm-4 col-lg-4">
-					<figure>
-						<p><img src="img/goods1.png" alt="goods"></p>
-						<figcaption>
-							<h3>Ami Play Crazy</h3>
-							<small></small>
-						</figcaption>
-					</figure>
+							<figcaption>
+								<h3>Acana Wild Prairie dog Wild Prairie dog</h3>
+								<small>Беззерновой корм с курицей для собак корм с курицей</small>
+							</figcaption>
+							<div class="choose-price clearfix">
+								<div class="price"><span>3000000 руб</span></div>
+								<div class="weight"><span>0.24 кг</span><img src="img/caret-down.png" alt="V"></div>
+							</div>
+							<div class="goods-btns">
+								<button class="to-cart">В корзину</button>
+								<button class="more-info">Подробнее</button>
+							</div>
+						</figure>
+					</div>
+					<div class="col-sm-4 col-lg-4">
+						<figure>
+							<p><img src="img/goods1.png" alt="goods"></p>
+							<figcaption>
+								<h3>Ami Play Crazy</h3>
+								<small>Лежак овальный, размер XS</small>
+							</figcaption>
+							<div class="choose-price clearfix">
+								<div class="price"><span>3000000 руб</span></div>
+								<div class="weight"><span>0.24 кг</span><img src="img/caret-down.png" alt="V"></div>
+							</div>
+							<div class="goods-btns">
+								<button class="to-cart">В корзину</button>
+								<button class="more-info">Подробнее</button>
+							</div>
+						</figure>
+					</div>
 				</div>
 			</div>
 		</section>
