@@ -53,7 +53,6 @@ s			}
 			.choose-price>div {
 				display: inline-block;
 				font-weight: 600;
-
 			}
 			.choose-price:hover>div {
 				color: #4b98e8;
@@ -65,10 +64,50 @@ s			}
 			.choose-price .weight {
 				float: right;
 				font-size: 14px;
+				font-weight: 400;
 			}
 			.choose-price img {
 				vertical-align: sub;
    				margin-left: 5px;
+			}
+			.prices-box {
+				position: absolute;
+				background-color: #e1f5fe;
+				width: 234px;
+				padding: 10px 15px 10px 35px;
+				z-index: 1000;
+				border-radius: 5px;
+			    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.21);
+			}
+			.prices-box::before {
+		        position: absolute;
+			    content: '';
+			    left: 50%;
+			    top: -30px;
+			    margin-left: -7.5px;
+			    border: 15px solid transparent;
+			    border-bottom: 15px solid #e1f5fe;
+			}
+			.prices-box ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+			.prices-box div{
+				display: inline-block;
+				font-weight: 600;
+			}
+			.prices-box .weight {
+				float: right;
+				font-size: 14px;
+				font-weight: 400;
+			}
+			.prices-box .weight span {
+				vertical-align: sub;
+			}
+			.prices-box li:hover {
+				background-color: #81d4fa;
+				cursor: pointer;
 			}
 			.goods-btns button {
 				outline: none;
@@ -104,12 +143,33 @@ s			}
 							</figcaption>
 							<div class="choose-price clearfix">
 								<div class="price"><span>3000000 руб</span></div>
-								<div class="weight"><span>0.24 кг</span><img src="img/caret-down.png" alt="V"></div>
+								<div class="weight"><span>0.24 кг</span><img src="img/caret-down.png" alt="v"></div>
 							</div>
+							<div class="prices-box">
+									<ul>
+										<li>
+											<div class="price"><span>00001 руб</span></div>
+											<div class="weight"><span>0001 кг</span></div>
+										</li>
+										<li>
+											<div class="price"><span>00002 руб</span></div>
+											<div class="weight"><span>0002 кг</span></div>
+										</li>
+										<li>
+											<div class="price"><span>00003 руб</span></div>
+											<div class="weight"><span>0003 кг</span></div>
+										</li>
+										<li>
+											<div class="price"><span>00004 руб</span></div>
+											<div class="weight"><span>0004 кг</span></div>
+										</li>
+									</ul>
+								</div>
 							<div class="goods-btns">
 								<button class="to-cart">В корзину</button>
 								<button class="more-info">Подробнее</button>
 							</div>
+
 						</figure>
 					</div>
 					<div class="col-sm-4 col-lg-4">
@@ -123,6 +183,26 @@ s			}
 								<div class="price"><span>3000000 руб</span></div>
 								<div class="weight"><span>0.24 кг</span><img src="img/caret-down.png" alt="V"></div>
 							</div>
+							<div class="prices-box">
+									<ul>
+										<li>
+											<div class="price"><span>00001 руб</span></div>
+											<div class="weight"><span>0001 кг</span></div>
+										</li>
+										<li>
+											<div class="price"><span>00002 руб</span></div>
+											<div class="weight"><span>0002 кг</span></div>
+										</li>
+										<li>
+											<div class="price"><span>00003 руб</span></div>
+											<div class="weight"><span>0003 кг</span></div>
+										</li>
+										<li>
+											<div class="price"><span>00004 руб</span></div>
+											<div class="weight"><span>0004 кг</span></div>
+										</li>
+									</ul>
+								</div>
 							<div class="goods-btns">
 								<button class="to-cart">В корзину</button>
 								<button class="more-info">Подробнее</button>
