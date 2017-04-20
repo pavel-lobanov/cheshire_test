@@ -52,6 +52,10 @@
 			   "6.8" : "935.00",
 			   "12" : "165.00"
 			   }
-	}]
+	}];
+
+	function createGoods (arguments) {
+		// body...
+	}
 	
 })();
