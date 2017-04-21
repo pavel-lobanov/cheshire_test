@@ -72,6 +72,7 @@
 				"price" : "165.00"},]
 	}];
 	let priceBoxIsOpen = false;
+	let currObj = null;
 
 	function createGoodsList (arguments) {
 		var mainContainer = document.getElementsByClassName('container')[0];
@@ -104,6 +105,7 @@
 	}
 
 	function createAndShowPriceBox (evObj) {
+		if (priceBoxIsOpen) return false;
 		var evObj    	 = evObj || window.event,
 			elemTarget   = evObj.currentTarget,
 			productNo    = elemTarget.dataset.product,
@@ -126,13 +128,23 @@
 
 	function changePrice (priceElement,evObj) {
 		var priceNumber = evObj.currentTarget.dataset.priceNumber,
-			productNumber = parseFloat(priceElement.dataset.product),
-			priceBox = document.getElementsByClassName('prices-box')[0];
+			productNumber = parseFloat(priceElement.dataset.product);
+			
 		priceElement.innerHTML = '<div class="price"><span>' + goodsBase[productNumber].prices[priceNumber].price + 'руб</span></div>' +
-								'<div class="weight"><span>' + goodsBase[productNumber].prices[priceNumber].weight + 'кг</span>';
-		priceBox.style.visibility = 'hidden';
-		priceBoxIsOpen = false;
+								'<div class="weight"><span>' + goodsBase[productNumber].prices[priceNumber].weight + 'кг</span>' +
+								'<img src="img/caret-down.png" alt="V"></div></div>';
+		
+		setTimeout(deleteBox, 10)
 	}
+
+	function deleteBox () {
+		priceBoxIsOpen = false;
+		var priceBox = document.getElementsByClassName('prices-box')[0];
+		if (!priceBox) return false
+		var parent = priceBox.parentNode;
+		parent.removeChild(priceBox);
+	}
+
 	createGoodsList();
 	addListeners();
 //})();
